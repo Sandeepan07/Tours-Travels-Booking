@@ -1,0 +1,207 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+header.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    position: relative; /* Add this line */
+    z-index: -1; /* Add this line to place the background image behind the content */
+}
+
+
+/* Navbar styles */
+.navbar {
+    background-color: transparent; /* Set the background color to transparent */
+    width: 100%;
+    position: absolute;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+
+.container.text-center {
+    padding: 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Destinations section styles */
+.destinations {
+    background-color: rgb(241, 238, 238);
+    padding: 40px 0;
+}
+
+.destination-card {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.destination-card img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+        .destination-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destination-card h3, .destination-card p {
+            text-align: center;
+        }
+
+        .col-md-4:hover .destination-card {
+            transform: scale(1.1);
+        }
+
+
+/* About section styles */
+.about {
+    background-color: #eeecec;
+    padding: 40px 0;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #ece6e6;
+   
+    padding: 40px 0;
+}
+
+.contact a {
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Book Now section styles */
+.book-now {
+    background-color: #007bff;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.book-now h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.book-now p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+form {
+    text-align: center;
+}
+
+form button {
+    background-color: #fff;
+    color: #80a4cb;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #afc8e2;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .destination-card {
+        width: 90%; /* Adjust card width for better image visibility */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
